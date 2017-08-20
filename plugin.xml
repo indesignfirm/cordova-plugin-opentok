@@ -9,7 +9,8 @@
     <license>Apache 2.0</license>
     <keywords>opentok,tokbox</keywords>
 
-    <platform name="android">
+  <!--
+  <platform name="android">
       <asset src="www/opentok.js" target="opentok.js" />
 
       <source-file src="src/android/com/tokbox/cordova/OpenTokAndroidPlugin.java"
@@ -26,6 +27,7 @@
       </config-file>
 
       <!-- copy opentok sdk -->
+  <!--
       <source-file src="src/android/libs/opentok-android-sdk-2.5.0.jar" target-dir="libs/" />
       <source-file src="src/android/libs/armeabi/libopentok.so" target-dir="libs/armeabi" />
       <source-file src="src/android/libs/x86/libopentok.so" target-dir="libs/x86" />
@@ -35,9 +37,9 @@
           <param name="android-package" value="com.tokbox.cordova.OpenTokAndroidPlugin"/>
         </feature>
       </config-file>
-      
-    </platform>
 
+    </platform>
+-->
     <!-- ios -->
     <platform name="ios">
       <hook type="before_plugin_install" src="scripts/downloadiOSSDK.js" />
